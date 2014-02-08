@@ -23,7 +23,7 @@
   (init (.getArguments context)))
 
 (defn -start [this]
-  (start))
+  (future (start)))
 
 (defn -stop [this]
   (stop))
