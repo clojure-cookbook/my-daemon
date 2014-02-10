@@ -16,7 +16,7 @@ $ sudo jsvc -java-home "$JAVA_HOME" \
             -cp "$(pwd)/target/my-daemon-0.1.0-SNAPSHOT-standalone.jar" \
             -outfile "$(pwd)/out.txt" \
             my_daemon.core
-````
+```
 
 To stop the application:
 
@@ -25,6 +25,8 @@ $ sudo jsvc -java-home "$JAVA_HOME" \
             -cp "$(pwd)/target/my-daemon-0.1.0-SNAPSHOT-standalone.jar" \
             -stop \
             my_daemon.core
+```
+
 ## License
 
 Copyright © 2013 O'Reilly Media, Ryan Neufeld
