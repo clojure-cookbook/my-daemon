@@ -15,9 +15,16 @@ Created /tmp/my-daemon/target/my-daemon-0.1.0-SNAPSHOT-standalone.jar
 $ sudo jsvc -java-home "$JAVA_HOME" \
             -cp "$(pwd)/target/my-daemon-0.1.0-SNAPSHOT-standalone.jar" \
             -outfile "$(pwd)/out.txt" \
-            my-daemon.core
+            my_daemon.core
 ````
 
+To stop the application:
+
+```sh
+$ sudo jsvc -java-home "$JAVA_HOME" \
+            -cp "$(pwd)/target/my-daemon-0.1.0-SNAPSHOT-standalone.jar" \
+            -stop \
+            my_daemon.core
 ## License
 
 Copyright © 2013 O'Reilly Media, Ryan Neufeld
