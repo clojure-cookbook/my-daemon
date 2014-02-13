@@ -5,7 +5,8 @@ accompanying recipe in the [Clojure Cookbook](http://clojure-cookbook.com).
 
 ## Usage
 
-To run the application as a daemon, install `jsvc` or `procrun` (untested) and execte the following commands:
+To run the application as a daemon, install `jsvc` or `procrun` (untested)
+and execute the following commands:
 
 ```sh
 $ lein uberjar
@@ -16,6 +17,11 @@ $ sudo jsvc -java-home "$JAVA_HOME" \
             -cp "$(pwd)/target/my-daemon-0.1.0-SNAPSHOT-standalone.jar" \
             -outfile "$(pwd)/out.txt" \
             my_daemon.core
+
+# Or...
+
+$ make
+$ make start
 ```
 
 To stop the application:
@@ -25,6 +31,10 @@ $ sudo jsvc -java-home "$JAVA_HOME" \
             -cp "$(pwd)/target/my-daemon-0.1.0-SNAPSHOT-standalone.jar" \
             -stop \
             my_daemon.core
+
+# Or ...
+
+$ make stop
 ```
 
 ## License
