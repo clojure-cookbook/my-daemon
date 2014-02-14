@@ -28,6 +28,8 @@
 (defn -stop [this]
   (stop))
 
+(defn -destroy [this])
+
 ;; Enable command-line invocation
 (defn -main [& args]
   (init args)
